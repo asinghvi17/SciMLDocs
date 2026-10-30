@@ -7,10 +7,11 @@ function MultiDocumenter.render(c::JuliaHubCommercialSupportComponent, doc, this
     return MultiDocumenter.@htl """
     <div>
         <a href="$(c.link)" class="nav-link nav-item">
-            <img src="/assets/juliahub-logo.svg" alt="JuliaHub logo - contact sales today!" style = "padding: 10px;"/>
+            <img src="/assets/juliahub-logo.svg" alt="JuliaHub logo" style = "padding: 10px;"/>
         </a>
         <p></p>
-        <a href="$(c.link)" class="nav-link nav-item">JuliaHub offers commercial support for ModelingToolkit and the SciML ecosystem.  Contact us today to discuss your needs!</a>
+        <a href="$(c.link)" class="nav-link nav-item">JuliaHub offers commercial support for ModelingToolkit and the SciML ecosystem.</a>
+        <a href="https://juliahub.com/products/dyad" class="nav-link nav-item">Dyad, JuliaHub's modeling language built on ModelingToolkit and SciML, supports industrial acausal modeling, digital twins and model-based design.</a>
     </div>
     """
 
